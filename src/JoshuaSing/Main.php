@@ -1,7 +1,7 @@
 <?php
-
-namespace: JoshuaSing;
-
+ 
+namespace JoshuaSing;
+ 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\Server;
@@ -9,9 +9,9 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use jojoe77777\FormAPI; //FormAPI by jojoe77777 is needed.
-
-class Main extends PluginBase implements Listener(
-
+ 
+class Main extends PluginBase implements Listener{
+ 
   public function onEnable(){
     $this->getLogger()->Info("Troll Has Been Enabled!");
     $this->getServer()->getPluginManager()->registerEvent($this, $this);
@@ -33,7 +33,7 @@ class Main extends PluginBase implements Listener(
   
   public function mainForm($player){
       $formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-      $form = $formapi->createSimpleForm(function, (player $event, array $data){
+      $form = $formapi->createSimpleForm(function (player $event, array $data){
           $result = $data[0];
           $player = $event->getPlayer(); // watch dev.
           if($result == null){
@@ -56,7 +56,7 @@ class Main extends PluginBase implements Listener(
   }
   public function trollForm($player){ //The first Button this is trollform, it's the link to TrollForm
       $formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-      $form = $formapi->createSimpleForm(function, (player $event, array $data){
+      $form = $formapi->createSimpleForm(function (player $event, array $data){
           $result = $data[0];
           $player = $event->getPlayer(); // watch dev.
           if($result == null){
@@ -70,5 +70,3 @@ class Main extends PluginBase implements Listener(
       $form->setTitle("Trollform"); // CHANGE M
       $form->setContent("HI"); // CHANGE!
       $form->addButton("Back To Menu") // CHANGE M
-  }
-} 

@@ -66,7 +66,7 @@ class Main extends PluginBase implements Listener{
               $this->mainForm($player); //like back to menu
               return;
       }
-      });
+      }};
       $form->setTitle("Trollform"); // CHANGE M
       $form->setContent("HI"); // CHANGE!
       $form->addButton("Back To Menu") // CHANGE M

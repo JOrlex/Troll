@@ -7,9 +7,4 @@ commands:
  troll:
   usage: /troll
   description: Troll Them!
-   aliases: ["trick"]
-permissions:
-  joshuasing.troll.use:
-    description: "Troll"
-    default: op
   

@@ -1,0 +1,10 @@
+name: Troll
+api: 3.0.0
+main: JoshuaSing\Main
+version: 3.1.1.2APLHA
+author: JoshuaSing
+commands:
+ troll:
+  usage: /troll
+  description: Troll Them!
+  
